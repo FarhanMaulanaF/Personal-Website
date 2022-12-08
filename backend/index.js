@@ -10,9 +10,9 @@ mongoose.connect('mongodb://localhost:27017/fullstack_db', {
 });
 const db = mongoose.connection;
 db.on('error',(error) => console.log(error));
-db.once('open', () => console.log('Database Connected ...'));
+db.once('open', () => console.log('Database sudah terkoneksi ...'));
 
 app.use(cors());
 app.use(express.json());
 
-app.listen(5000, ()=> console.log('Server up and running ...'));
+app.listen(5000, ()=> console.log('Server berjalan baik ...'));
